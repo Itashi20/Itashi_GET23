@@ -1,0 +1,27 @@
+
+:root{
+    --primary-color:blue;
+    --secondary-color:orange;
+
+}
+
+div>p::first-letter{
+    color:var(--primary-color);
+}
+
+div p::first-line{
+    font-size: 20px;
+}
+
+body>p::after{
+    content:"bye";
+}
+
+div>p::before{
+    content:"welcome";
+}
+
+
+.even::first-letter{
+    color: var(--secondary-color);
+}
